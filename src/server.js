@@ -21,7 +21,7 @@ app.use('/login', account.signin)
 
 module.exports = () => {
     try {
-        app.listen(7000, async ()=>{
+        app.listen(port, async ()=>{
             await mongoConnect()
             console.log(`Server is listening on the port ${port}`)
         })
